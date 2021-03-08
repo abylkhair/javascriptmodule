@@ -1,0 +1,121 @@
+#mySlider {
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.singleSlide {
+	background-size: cover;
+	height: 80%;
+	position: absolute;
+	left: 100%;
+	width: 100%;
+	top: 0px;
+	color: white;
+	text-align: center;
+}
+
+.slideOverlay {
+	display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slideOverlay__slider-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 216px;
+	height: 56px;
+	text-align: center;
+	border-radius: 12px;
+	text-decoration: none;
+	background-color:tomato;
+	color: white;
+}
+	
+#sliderNav {
+	display: none;
+	position: relative;
+    top: -175px;
+	color: white;
+}
+
+#sliderNav:hover { cursor: pointer; 	}
+
+#sliderPrev {
+	position: relative;
+	float: left;
+	left: 50px;
+}
+
+#sliderNext {
+	position: relative;
+	float: right;
+	right: 50px;
+}
+
+.slider-nav__slider-button {
+	width: 100%;
+	height: 100%;
+}
+
+@-webkit-keyframes slideIn {
+    100% { left: 0; }
+}
+
+@keyframes slideIn {
+    100% { left: 0; }
+}
+
+.slideInRight {
+	left: -100%;
+	-webkit-animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards;
+}
+
+.slideInLeft {
+	left: 100%;
+	-webkit-animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards;
+}
+
+@-webkit-keyframes slideOutLeft {
+    100% { left: -100%; }
+}
+
+@keyframes slideOutLeft {
+    100% { left: -100%; }
+}
+
+.slideOutLeft {
+	-webkit-animation: slideOutLeft 1s forwards;
+    animation: slideOutLeft 1s forwards;
+}
+
+@-webkit-keyframes slideOutRight {
+    100% { left: 100%; }
+}
+
+@keyframes slideOutRight {
+    100% { left: 100%; }
+}
+
+.slideOutRight {
+	-webkit-animation: slideOutRight 1s forwards;
+    animation: slideOutRight 1s forwards;
+}
+
+
+
+
+
+
+
+
+
+
